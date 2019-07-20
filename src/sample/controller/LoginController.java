@@ -25,9 +25,9 @@ public class LoginController {
     @FXML
     void initialize(){
 
-        button.setOnAction(event -> {
-            label.setText("TEST!");
-        });
+        label.setText("List To Do");
+
+        TextField.setEditable(false);
 
     }
 
