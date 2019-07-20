@@ -22,12 +22,19 @@ public class LoginController {
     @FXML
     private Label label;
 
+    String task;
+
     @FXML
     void initialize(){
 
         label.setText("List To Do");
 
         TextField.setEditable(false);
+
+        button.setOnMouseClicked(event -> {
+            String task = TypeField.getText();
+            TextField.setText(task);
+        });
 
     }
 
