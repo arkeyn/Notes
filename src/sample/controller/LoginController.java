@@ -36,6 +36,11 @@ public class LoginController {
             TextField.appendText(task+"\n");
         });
 
+        button.setOnMouseClicked(event -> {
+            String task = TypeField.getText();
+            TextField.setText(task);
+        });
+
     }
 
 
