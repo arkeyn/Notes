@@ -29,11 +29,11 @@ public class LoginController {
 
         label.setText("List To Do");
 
-        TextField.setEditable(false);
+//        TextField.setEditable(false);
 
         button.setOnMouseClicked(event -> {
             String task = TypeField.getText();
-            TextField.setText(task);
+            TextField.appendText(task+"\n");
         });
 
     }
